@@ -1,0 +1,167 @@
+# el comando signo de admiración ! mas tab, me crea la estructura básica de un sitio web
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+# div mas tabulador
+<div></div>
+
+# div>ul>li mas tabulador me crea la capa div, un ul y una lista en forma descendente 
+ <div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+#div>ul>li*5 mas tabulador o enter me crea la capa div, un ul y una lista en forma descendente repetida 5 veces
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+#div>ul>li{elemento}*10 mas tabulador o enter me crea la capa div, un ul y una lista en forma descendente repetida 10 veces
+<div>
+    <ul>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ul>
+</div>
+
+#div>ul>li{elemento $}*10 mas tabulador o enter me crea la capa div, un ul y una lista en forma descendente y reemplaza el signo por un número
+<div>
+
+<div>
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>elemento 5</li>
+        <li>elemento 6</li>
+        <li>elemento 7</li>
+        <li>elemento 8</li>
+        <li>elemento 9</li>
+        <li>elemento 10</li>
+    </ul>
+</div>
+
+<!-- div>span{calle $@10}*4 cambia $@ por números que inician en 10-->
+<div>
+    <span>calle 10</span>
+    <span>calle 11</span>
+    <span>calle 12</span>
+    <span>calle 13</span>
+</div>
+
+con #main_container mas Enter me va a detectar que esto es una capa
+<div id="main_container"></div> 
+
+
+img#photo mas enter, me crea un id y una imágen
+<img src="" alt="" id="photo">
+
+im#photo.bordes mas enter me crea una clase llamada bordes
+
+<img src="" alt="" id="photo" class="bordes">
+
+img.bordes.underline mas enter me crea dos clases separadas 
+
+<img src="" alt="" class="bordes underline">
+
+el signo > es para generar hijos
+
+div>img+div.header mas enter, la capa div crea dos elementos hijo y crea otra capa al mismo nivel de img
+<div>
+    <img src="" alt="">
+    <div class="header"></div>
+</div>
+
+#para agrupar elementos // aquí tenemos 4 capas container
+div(div.container>img.photo+div.titulo)*4
+<div></div>
+<div class="container">
+    <img src="" alt="" class="photo">
+    <div class="titulo"></div>
+</div>
+<div class="container">
+    <img src="" alt="" class="photo">
+    <div class="titulo"></div>
+</div>
+<div class="container">
+    <img src="" alt="" class="photo">
+    <div class="titulo"></div>
+</div>
+<div class="container">
+    <img src="" alt="" class="photo">
+    <div class="titulo"></div>
+</div>
+
+ejemplo de estructura compleja
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <div>logo</div>
+        </header>
+        <main>
+            <!-- (div.post>hs.title+span.date+div.content>lorem)*5 -->
+            <div class="post">                
+                <h2 class="tilte"></h2>  
+                <span class="date"></span>
+                <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nobis nesciunt molestias fuga aliquid nemo sequi voluptate obcaecati porro cum eos dolore, non qui, vel modi est harum iure aut.</div>
+            </div>
+            <div class="post">
+                <h2 class="tilte"></h2>
+                <span class="date"></span>
+                <div class="content">Alias assumenda dolorem est ipsam, voluptatum vitae exercitationem repellendus a vel nihil nobis cupiditate similique sequi totam sint fugit aliquid ex quam reprehenderit fugiat et libero? Consectetur ea quos magnam.</div>
+            </div>
+            <div class="post">
+                <h2 class="tilte"></h2>
+                <span class="date"></span>
+                <div class="content">Libero aliquid eum cum ipsam aperiam ullam odit, rerum facilis aliquam inventore quos a tempora atque blanditiis quam saepe. Quam quaerat quia error expedita repellat fuga unde tenetur labore beatae?</div>
+            </div>
+            <div class="post">
+                <h2 class="tilte"></h2>
+                <span class="date"></span>
+                <div class="content">Asperiores quaerat ad exercitationem totam fuga voluptas quia illum, nihil nisi facere? Nemo, libero sapiente molestiae culpa, ut eius, praesentium illum cumque quibusdam blanditiis quae excepturi? Rem accusamus doloremque aut?</div>
+            </div>
+            <div class="post">
+                <h2 class="tilte"></h2>
+                <span class="date"></span>
+                <div class="content">Laborum quo dolorum iste illo, sunt incidunt in accusantium minus. Officia excepturi quod numquam aspernatur voluptatem debitis deleniti id illo, in pariatur rerum? Minima in dolorem illo quod explicabo neque.</div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
+<!--   __________________________________________________________________________ -->
+
